@@ -1,0 +1,50 @@
+.carousel_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+  
+  .item1 {
+    background-color: blue;
+  }
+  .item2 {
+    background-color: red;
+  }
+  .item3 {
+    background-color: chartreuse;
+  }
+  
+  .main-container {
+    height: 150px;
+    width: 450px;
+    user-select: none;
+  }
+  
+  .window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .all-items-container {
+    height: 100%;
+    display: flex;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
+  
+  
+  .arrow {
+    cursor: pointer;
+  }
+  
+  .main-container {
+    height: 150px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+  }
+  

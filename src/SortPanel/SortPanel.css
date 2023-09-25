@@ -1,0 +1,41 @@
+.sort-panel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f4f4f4;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-panel ul {
+  display: block;
+  position: absolute;
+  top: 60px;
+  list-style-type: none;
+  position: relative;
+}
+
+.sort-panel li {
+  display: block;
+  position: relative;
+  height: 30px;
+  width: 200px;
+  background-color: aqua;
+  border: 2px solid red;
+}
+
+.sort-panel button {
+  border: none;
+  cursor: pointer;
+  color: grey;
+}
+
+.sort-by {
+  display: block;
+  position: relative;
+}
+
+.right {
+  display: block;
+}

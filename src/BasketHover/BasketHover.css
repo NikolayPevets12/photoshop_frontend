@@ -1,0 +1,22 @@
+.basket-hover{
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    z-index: 1;
+    background-color: #fff;
+    animation-name: basket-hover;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes basket-hover {
+    from {
+        right: -300px;
+    }
+    to {right: 0px;}
+  }
