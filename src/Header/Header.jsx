@@ -66,15 +66,15 @@ export default function Header() {
 
         <SearchPanel />
         <div className="header_basket_icons">
-          <a
-            href=""
+          <Link
+            to="/basket"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
             <SlBasket size={30} className="icn" />
             Корзина
             {showBasket ? <BasketHover /> : null}
-          </a>
+          </Link>
           <a href="">
             <PiScales size={30} />
             Сравнение

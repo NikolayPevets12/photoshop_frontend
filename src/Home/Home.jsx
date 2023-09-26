@@ -7,6 +7,7 @@ import FullItem from "../FullItem/FullItem";
 import "./Home.css";
 import { Routes, Route, Switch } from "react-router-dom";
 import Contacts from "../Contacts/Contacrs";
+import Basket from "../Basket/Basket";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/item/:itemId" element={<FullItem />} />
         <Route path="/contacts" element={<Contacts/> } /> 
+        <Route path="/basket" element={<Basket/> } /> 
       </Routes>
       <Footer />
     </div>

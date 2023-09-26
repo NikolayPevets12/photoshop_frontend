@@ -48,7 +48,7 @@ export default function AddItem() {
   return (
     <div className="form-wrapper">
       <img src={Logotype} />
-      <div>Добавление нового товара</div>
+      <div>Добавление нового товара:</div>
       <input type="file" onChange={handleChangeFile} />
       {/* {imageUrl ? <img src={`http://localhost:3001${imageUrl}`}/> : null} */}
       <div className="images">
