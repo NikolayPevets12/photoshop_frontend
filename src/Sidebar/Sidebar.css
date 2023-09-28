@@ -7,7 +7,6 @@
 .menu-item {
   display: flex;
   height: 40px;
-  /* border: 1px solid gray; */
   position: relative;
   align-items: center;
   flex-direction: row;
@@ -57,8 +56,7 @@
   left: "300px";
   background-color: #fff;
   animation: fadeIn 0.3s forwards;
-  /* position: relative; */
-  /* top: -11px; */
+
 }
 
 @keyframes fadeIn {

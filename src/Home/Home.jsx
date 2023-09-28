@@ -12,18 +12,15 @@ import Basket from "../Basket/Basket";
 function Home() {
   return (
     <div className="Home">
-      <div className="container">
-        <Header />
-      </div>
       <Routes>
         <Route path="/items/:category?/:brand?" element={<Items />} />
         <Route path="/" element={<Content />} />
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/item/:itemId" element={<FullItem />} />
-        <Route path="/contacts" element={<Contacts/> } /> 
-        <Route path="/basket" element={<Basket/> } /> 
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/basket" element={<Basket />} />
+        <Route path="/admin/addPost" element={<AddItem />} />
       </Routes>
-      <Footer />
     </div>
   );
 }

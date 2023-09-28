@@ -28,7 +28,11 @@ export default function Carousel2() {
   };
   return (
     <div className="carousel-window">
-      <img className="banner-image banner-animation" src={images[currentImageIndex]} alt="" />
+      <img
+        className="banner-image banner-animation"
+        src={images[currentImageIndex]}
+        alt=""
+      />
       <div className="carousel-overlay">
         <BsFillArrowLeftCircleFill
           className="arrow"

@@ -8,6 +8,7 @@ import axios from "../axios";
 import Preloader from "../Preloader/Preloader";
 import { useSelector } from "react-redux";
 import Item from "../Item/Item";
+import Layout from "../Layout/Layout";
 
 export default function Items() {
   const { category, brand } = useParams();
@@ -34,21 +35,23 @@ export default function Items() {
   }, []);
   return (
     <>
-      <div className="container">
-        <div className="items">
-          <SidebarInfo />
-          <div>
-            <SortPanel />
-            <div className="items-inner">
-              {isLoading ? (
-                <Preloader />
-              ) : (
-                data.map((item, index) => <Item item={item} />)
-              )}
+      <Layout>
+        <div className="container">
+          <div className="items">
+            <SidebarInfo />
+            <div>
+              <SortPanel />
+              <div className="items-inner">
+                {isLoading ? (
+                  <Preloader />
+                ) : (
+                  data.map((item, index) => <Item item={item} />)
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Layout>
     </>
   );
 }

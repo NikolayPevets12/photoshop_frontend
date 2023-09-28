@@ -6,12 +6,11 @@ export default function Item({ item }) {
   const isGrid = useSelector((state) => state.visual.itemsGrid);
 
   const handleAddToBasket = (id) => {
-    const existingArray = JSON.parse(localStorage.getItem('basket')) || [];
+    const existingArray = JSON.parse(localStorage.getItem("basket")) || [];
     const newItem = id;
     existingArray.push(newItem);
-    localStorage.setItem('basket', JSON.stringify(existingArray));
-    console.log('ss')
-  }
+    localStorage.setItem("basket", JSON.stringify(existingArray));
+  };
 
   return (
     <>
@@ -21,7 +20,12 @@ export default function Item({ item }) {
           <Link to={`/item/${item._id}`}>{item.title} </Link>
         </p>
         <p className="cost">{item.cost} руб.</p>
-        <button className="item-button" onClick={() => handleAddToBasket(item._id)}>купить</button>
+        <button
+          className="item-button"
+          onClick={() => handleAddToBasket(item._id)}
+        >
+          купить
+        </button>
         {item.discount ? (
           <p className="item-discount">-{item.discount}%</p>
         ) : null}

@@ -18,10 +18,10 @@ export default function BasketHover() {
       })
       .catch((err) => console.log("ddddeerer"));
   });
-    let totalCost = 0;
-    for(let i = 0; i < data.length; i++){
-      totalCost += data[i].cost;
-    }
+  let totalCost = 0;
+  for (let i = 0; i < data.length; i++) {
+    totalCost += data[i].cost;
+  }
   return (
     <div className="basket-hover">
       <div>
@@ -40,6 +40,7 @@ export default function BasketHover() {
         ))}
       </div>
       <div className="total-cost"> Итого: {totalCost} $</div>
+      <button className="item-button">Оформить</button>
     </div>
   );
 }

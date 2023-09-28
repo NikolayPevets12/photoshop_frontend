@@ -7,9 +7,10 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import SearchPanel from "../SearchPanel/SearchPanel";
 import { Link } from "react-router-dom";
-import BasketHover from "../BasketHover/BascetHover";
+import BasketHover from "../BasketHover/BasketHover";
 import { useState } from "react";
-// import logo from './logo';
+import classes from './Header.module.css';
+
 export default function Header() {
   const [showBasket, setShowBasket] = useState(false);
 
@@ -21,8 +22,8 @@ export default function Header() {
   };
 
   return (
-    <section className="header">
-      <div className="header_menu">
+    <section className={classes.header}>
+      <div className={classes.header_menu}>
         <ul className="header_menu_list">
           <li className="header_menu_item">
             <a href="">О нас</a>
