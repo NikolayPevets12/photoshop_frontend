@@ -1,7 +1,10 @@
+import Layout from "../Layout/Layout";
 import "./Contacts.css";
 
 export default function Contacts() {
   return (
-    <section className="contacts">CONTACTS</section>
+    <Layout>
+      <section className="contacts">CONTACTS</section>
+    </Layout>
   );
 }

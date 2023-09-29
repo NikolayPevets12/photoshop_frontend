@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import Logotype from "../Images/Logo.png";
 import "./AddItem.css";
-import {BsFillTrashFill} from 'react-icons/bs'
+import { BsFillTrashFill } from "react-icons/bs";
 export default function AddItem() {
   const [characteristic, setCharacteristic] = useState("");
   const [characteristicList, setCharacteristicList] = useState([]);
@@ -38,7 +38,7 @@ export default function AddItem() {
   };
   const handleSetCharacteristic = (event) => {
     setCharacteristic(event.target.value);
-    console.log(characteristic);
+    console.log(characteristic);  
   };
 
   const elements = characteristicList.map((item) => {
@@ -55,10 +55,14 @@ export default function AddItem() {
         {imageUrls.map((item, index) => {
           return (
             <div className="image-wrap">
-              <div className="image-overlay"><BsFillTrashFill size={50} color='white'/></div>
-              <img className="img-preview" src={`http://localhost:3001${item}` } />
+              <div className="image-overlay">
+                <BsFillTrashFill size={50} color="white" />
+              </div>
+              <img
+                className="img-preview"
+                src={`http://localhost:3001${item}`}
+              />
             </div>
-            
           );
         })}
       </div>

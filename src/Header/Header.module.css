@@ -2,15 +2,10 @@
   width: 100%;
   /* background-color: aqua;   */
   /* max-height: 250px; */
-  &__menu {
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    vertical-align: middle;
-    height: 50px;
-  }
+  
 }
+
+
 
 .header_phones {
   /* display: block; */

@@ -3,6 +3,7 @@ import "./FullItem.css";
 import axios from "../axios";
 import { useParams } from "react-router-dom";
 import SidebarInfo from "../SidebarInfo/SidebarInfo";
+import Layout from "../Layout/Layout";
 
 export default function FullItem() {
   const { itemId } = useParams();
@@ -24,21 +25,23 @@ export default function FullItem() {
   }, []);
   return (
     <div className="container">
-      <div className="full-item">
-        <SidebarInfo />
-        <div>
-          <div>{data.title}</div>
-          {!isLoading ? (
-            <div>
-              <img src={data.imageUrl} alt="" />
-            </div>
-          ) : null}
-          <p>Характеристики:</p>
-          {!isLoading
-            ? data.description.map((item) => <div>{item}</div>)
-            : null}
+      <Layout>
+        <div className="full-item">
+          <SidebarInfo />
+          <div>
+            <div>{data.title}</div>
+            {!isLoading ? (
+              <div>
+                <img src={data.imageUrl} alt="" />
+              </div>
+            ) : null}
+            <p>Характеристики:</p>
+            {!isLoading
+              ? data.description.map((item) => <div>{item}</div>)
+              : null}
+          </div>
         </div>
-      </div>
+      </Layout>
     </div>
   );
 }

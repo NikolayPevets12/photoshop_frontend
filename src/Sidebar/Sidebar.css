@@ -9,10 +9,13 @@
   height: 40px;
   position: relative;
   align-items: center;
+  justify-content: flex-start;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   cursor: pointer;
+  padding-left: 40px;
 }
+
 
 .active {
   color: #fa9026;
@@ -30,11 +33,11 @@
 }
 .menu-item::after {
   content: "";
-  width: 250px;
+  width: 90%;
   height: 1px;
   background-color: #ebebeb;
   position: absolute;
-  left: 25;
+  left: 10px;
   top: 40px;
 }
 
@@ -47,13 +50,15 @@
 }
 
 .popover {
+  position: absolute;
   padding: 20px;
   width: 500px;
   height: 200px;
   border: 1px solid grey;
   border-left: 2px solid #ff6600;
   z-index: 1;
-  left: "300px";
+  left: 0px;
+  /* top: 100px; */
   background-color: #fff;
   animation: fadeIn 0.3s forwards;
 
@@ -65,7 +70,7 @@
     opacity: 0;
   }
   to {
-    left: 300px;
+    left: 280px;
     opacity: 1;
   }
 }

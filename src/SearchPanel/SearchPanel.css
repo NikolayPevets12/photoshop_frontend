@@ -17,14 +17,14 @@
   /* position: absolute; */
   position: relative;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .header_search button {
   position: relative;
-  top: 5px;
+  /* top: 5px; */
   /* left: -45px; */
   right: 40px;
   width: 40px;

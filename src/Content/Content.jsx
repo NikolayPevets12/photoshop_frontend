@@ -15,9 +15,13 @@ export default function Content() {
           <Sidebar />
           <div className="links">
             <Carousel2 />
-            <div className="content-links">
+            <div>
               <img src={Banner1}></img>
+            </div>
+            <div>
               <img src={Banner2}></img>
+            </div>
+            <div>
               <img src={Banner3}></img>
             </div>
           </div>

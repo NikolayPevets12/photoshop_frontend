@@ -8,7 +8,7 @@ import "./Home.css";
 import { Routes, Route, Switch } from "react-router-dom";
 import Contacts from "../Contacts/Contacrs";
 import Basket from "../Basket/Basket";
-
+import AddItem from '../AddItem/AddItem'
 function Home() {
   return (
     <div className="Home">
@@ -19,7 +19,7 @@ function Home() {
         <Route path="/item/:itemId" element={<FullItem />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/basket" element={<Basket />} />
-        <Route path="/admin/addPost" element={<AddItem />} />
+        <Route path="/admin/addItem" element={<AddItem />} />
       </Routes>
     </div>
   );

@@ -1,16 +1,13 @@
 .carousel-window {
   position: relative;
-  /* background-image: url("../Images/robotcleaner_banner.jpg"); */
-  /* height: 365px; */
-  /* background-size: contain; */
   background-repeat: no-repeat;
   overflow: hidden;
   border-radius: 5px;
   transition: 1s;
-  /* border: 2px solid black; */
   padding-top: 30%;
-  /* height: 100px; */
   user-select: none;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .carousel-window a {

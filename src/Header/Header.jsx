@@ -9,7 +9,7 @@ import SearchPanel from "../SearchPanel/SearchPanel";
 import { Link } from "react-router-dom";
 import BasketHover from "../BasketHover/BasketHover";
 import { useState } from "react";
-import classes from './Header.module.css';
+import classes from "./Header.module.css";
 
 export default function Header() {
   const [showBasket, setShowBasket] = useState(false);
@@ -22,8 +22,8 @@ export default function Header() {
   };
 
   return (
-    <section className={classes.header}>
-      <div className={classes.header_menu}>
+    <section className="header">
+      <div className="header_menu">
         <ul className="header_menu_list">
           <li className="header_menu_item">
             <a href="">О нас</a>
@@ -64,7 +64,6 @@ export default function Header() {
           <GiHamburgerMenu color="white" />
           Каталог
         </div>
-
         <SearchPanel />
         <div className="header_basket_icons">
           <Link
